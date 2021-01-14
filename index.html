@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Shower Presentation Engine</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="shower/themes/ribbon/styles/styles.css" />
+    <style>
+      .shower {
+        --slide-ratio: calc(16 / 9);
+      }
+      p {
+        line-height: 1.5em;
+        text-align: justify;
+      }
+    </style>
+  </head>
+  <body class="shower list">
+    <header class="caption">
+      <h1>Глоссарий на тему "Гибкая методология Scrum"</h1>
+      <p>
+        Чернявка Никита Андреевич,<br />
+        Логинова Софья Андреевна,<br />
+        Шульман Эмиль Маратович
+      </p>
+    </header>
+
+    <section class="slide" id="cover">
+      <h2>Глоссарий на тему "Гибкая методология Scrum"</h2>
+      <p>
+        Авторы: студенты 3 курса ИВТ<br />
+        Чернявка Никита Андреевич,<br />
+        Логинова Софья Андреевна,<br />
+        Шульман Эмиль Маратович
+      </p>
+      <img class="cover" src="pictures/cover.jpg" alt="Скрам, получается" />
+      <style>
+        #cover img {
+          filter: blur(8px);
+          -webkit-filter: blur(8px);
+        }
+        #cover h2 {
+          margin: 30px 0 0;
+          color: white;
+          /* -webkit-text-stroke: 0.04em black; */
+          text-align: center;
+          font-size: 70px;
+        }
+
+        #cover p {
+          margin: 50px 0 0;
+          text-align: right;
+          color: white;
+          /* -webkit-text-stroke: 0.04em black; */
+          font-style: italic;
+          font-weight: bold;
+          font-size: 24px;
+        }
+
+        #cover p a {
+          color: white;
+        }
+      </style>
+    </section>
+
+    <section class="slide">
+      <h2>Stand Up (Стендап)</h2>
+      <p>
+        Ежедневное сверхкороткое собрание, которое для простоты проводится в
+        одно и то же время (обычно утром) и в одном и том же месте. Многие
+        команды стараются уложиться в 15 минут, но это не более чем ориентир.
+        Такое собрание еще называется «ежедневным стендапом», что подчеркивает
+        его краткость. Ежедневное scrum-совещание проводится, чтобы каждый
+        участник команды был в курсе происходящего, не отклонялся от пути к цели
+        и получал план работы на ближайшие 24 часа.
+      </p>
+      <p class="note">
+        <a href="https://www.atlassian.com/ru/agile/scrum" target="_blank"
+          >Источник</a
+        >
+      </p>
+    </section>
+
+    <section class="slide">
+      <h2>Sprint (Спринт)</h2>
+      <p>
+        Рабочий период (цикл) от одной недели до одного месяца за который
+        команда разработки создает продукт, часть продукта, улучшает
+        существующий функционал продукта и т.д.
+      </p>
+      <p class="note">
+        <a
+          href="https://mirdostupa.ru/digital-po-russki-chto-vsyo-eto-znachit-popolnyaetsya/"
+          target="_blank"
+          >Источник</a
+        >
+      </p>
+    </section>
+
+    <section class="slide">
+      <h2>Scrum-board (Скрам-доска)</h2>
+      <p>
+        Импровизированная доска с задачами на текущий спринт с карточками. Всего
+        в ней три колонки: «Сделать», «В работе» и «Готово». С каждым новым
+        спринтом все карточки убираются и процесс повторяется.
+      </p>
+      <p class="note">
+        <a
+          href="https://mirdostupa.ru/digital-po-russki-chto-vsyo-eto-znachit-popolnyaetsya/"
+          target="_blank"
+          >Источник</a
+        >
+      </p>
+    </section>
+
+    <section class="slide">
+      <h2>Product Backlog (Бэклог продукта)</h2>
+      <p>
+        Главный список работ, которые необходимо выполнить. Его ведёт владелец
+        продукта или менеджер продукта. Это постоянно меняющийся перечень
+        функций, требований, улучшений и исправлений, из которого составляются
+        задачи для бэклога спринта. В общем и целом, это список задач команды.
+      </p>
+      <p class="note">
+        <a href="https://www.atlassian.com/ru/agile/scrum" target="_blank"
+          >Источник</a
+        >
+      </p>
+    </section>
+
+    <section class="slide">
+      <h2>Burn-down Chart (Бёрндаун график)</h2>
+      <div class="columns two">
+        <p>
+          Диаграмма, показывающая соотношение прогресса оставшихся усилий к
+          времени. Диаграмма не является обязательной к выполнению в рамках
+          scrum, но делает прогресс более прозрачным.
+        </p>
+        <img
+          style="max-width: 120%"
+          src="pictures/burndown.png"
+          alt="burndown chart"
+        />
+      </div>
+      <p class="note">
+        <a href="https://gantbpm.ru/scrum-terminy/" target="_blank">Источник</a>
+      </p>
+    </section>
+
+    <section class="slide">
+      <h2>Ретроспектива спринта (Sprint Retrospective)</h2>
+      <p>
+        Собрание после завершения спринта. Цель — запланировать повышение
+        качества и эффективности. Скрам-команда инспектирует то, как прошел
+        последний Спринт в отношении людей, взаимодействий, процессов,
+        инструментов и Критериев Готовности. Выявляются предположения, которые
+        сбили команду с пути, и исследуются их причины. Скрам-команда определяет
+        улучшения в процессе своей работы, наиболее полезные для повышения
+        эффективности.
+      </p>
+      <p class="note">
+        <a
+          href="https://scrumtrek.ru/blog/agile-scrum/scrum-glossary/3728/sprint-retrospective/"
+          target="_blank"
+          >Источник</a
+        >
+      </p>
+    </section>
+
+    <section class="slide">
+      <h2>Модель «подрывных инноваций»</h2>
+      <div class="columns two">
+        <p>
+          Модель гарвардского профессора Клейтона Кристенсена объясняет, почему
+          компании-лидеры терпят крах с приходом новых технологий.
+        </p>
+        <img style="width: 120%" src="pictures/model.png" alt="model (chart)" />
+      </div>
+    </section>
+
+    <section class="slide">
+      <h2>Дизайн-мышление</h2>
+      <p>
+        Этот подход предлагает решать бизнес-задачи, ориентируясь в первую
+        очередь на интересы пользователя. Задача команды — определить проблему,
+        понять, какая «боль» у потенциальных клиентов и как ее облегчить. Дальше
+        участники генерируют идеи, много идей, и — самое важное — на основе
+        лучшей идеи создается прототип. При этом ценятся не только практические,
+        но и эмоционально наполненные задумки, всячески поощряется командная
+        работа и творческий подход, а логике авторы концепции предпочитают
+        интуицию.
+      </p>
+    </section>
+
+    <section class="slide">
+      <h2>Владелец продукта (Product Owner)</h2>
+      <p>
+        Отвечает за итоговый продукт, знает, в чем его востребованность для
+        целевой аудитории, клиента.
+      </p>
+    </section>
+
+    <section class="slide">
+      <h2>Daily Meetings</h2>
+      <p>15-минутные встречи, которые позволяют не сбиваться с пути.</p>
+    </section>
+
+    <section class="slide">
+      <h2>Самоорганизация (Self-organization)</h2>
+      <p>
+        Ключевой критерий работы заключается в том, что команда действует по
+        принципу самоорганизации.
+      </p>
+    </section>
+
+    <section class="slide">
+      <h2>Пользовательская история (User Story)</h2>
+      <p>
+        Описание требований к продукту с точки зрения запроса пользователей.
+      </p>
+    </section>
+
+    <section class="slide">
+      <h2>Анализ пяти сил Портера</h2>
+      <div class="columns two">
+        <p style="font-size: 21px; width: 110%">
+          Популярный инструмент бизнес-стратегии разработал американский
+          экономист Майкл Портер. Он помогает понять, стоит ли вообще тратить
+          силы на захват нового рынка и как сохранить позиции на уже
+          существующем. Для этого Портер предлагает проанализировать пять
+          факторов: угрозу появления новых игроков и продуктов-заменителей,
+          уровень конкуренции, а также понять степень влияния поставщиков и
+          потребителей на выбранный сегмент рынка.
+        </p>
+        <img
+          style="width: 120%"
+          src="pictures/porter.png"
+          alt="Porter's model (chart)"
+        />
+      </div>
+    </section>
+
+    <section class="slide">
+      <h2>Demo</h2>
+      <p>
+        Краткое пояснение того, как завершенная задача будет продемонстрирована
+        в конце спринта. Данное поле может представлять собой код
+        автоматизированного теста для приемо-сдаточного испытания.
+      </p>
+    </section>
+
+    <section class="slide clear">
+      <h2 class="shout shrink">Спасибо за внимание!</h2>
+    </section>
+
+    <footer class="badge">
+      <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Click me</a>
+    </footer>
+
+    <div class="progress"></div>
+
+    <script src="shower/shower.js"></script>
+    <!-- Copyright © 3000 Yours Truly, Famous Inc. -->
+  </body>
+</html>
